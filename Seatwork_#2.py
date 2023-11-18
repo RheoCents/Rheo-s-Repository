@@ -14,7 +14,7 @@ while True:
     print(Style.BRIGHT + Fore.LIGHTRED_EX + pyfiglet.figlet_format("\nHello " + str(user_name) + "!", font="stampatello", justify="center"))
 
 
-    user_Full_name = input(Fore.CYAN + Back.BLACK+"Format: (Given Name / Middle Initial / Surname)\nWhat is your name? ")
+    user_full_name = input(Fore.CYAN + Back.BLACK+"Format: (Given Name / Middle Initial / Surname)\nWhat is your name? ")
     while True:
         user_age = input(Fore.CYAN + Back.BLACK+ "How old are you? ")
         if user_age.isdigit() and int(user_age) in range(18, 30):
