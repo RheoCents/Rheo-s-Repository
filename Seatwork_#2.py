@@ -14,7 +14,7 @@ while True:
     print(Style.BRIGHT + Fore.LIGHTRED_EX + pyfiglet.figlet_format("\nHello " + str(user_name) + "!", font="stampatello", justify="center"))
 
 
-    user_Fname = input(Fore.CYAN + Back.BLACK+"Format: (Given Name / Middle Initial / Surname)\nWhat is your name? ")
+    user_Full_name = input(Fore.CYAN + Back.BLACK+"Format: (Given Name / Middle Initial / Surname)\nWhat is your name? ")
     while True:
         user_age = input(Fore.CYAN + Back.BLACK+ "How old are you? ")
         if user_age.isdigit() and int(user_age) in range(18, 30):
@@ -30,7 +30,7 @@ while True:
     user_address = input(Fore.CYAN + Back.BLACK+ "Where do you live? ")
     print()
     print(Style.BRIGHT + Back.MAGENTA + Fore.BLACK + "Your username is " + str(user_name))
-    print(Style.BRIGHT + Back.MAGENTA + Fore.BLACK + "Your name is " + str(user_Fname))
+    print(Style.BRIGHT + Back.MAGENTA + Fore.BLACK + "Your name is " + str(user_full_name))
     print(Style.BRIGHT + Back.MAGENTA + Fore.BLACK + "And you are " + str(user_age) + " years old")
     print(Style.BRIGHT + Back.MAGENTA + Fore.BLACK + "That lives in " + str(user_address))
     print()
@@ -51,7 +51,7 @@ root.withdraw()
 simpledialog.messagebox.showinfo(str(user_name) +"'s Profile", "Name: " + str(user_name) + "\n Age: " + str(user_age) + "\nAddress: " + str(user_address) )
 
 print(Style.DIM + Fore.LIGHTRED_EX + pyfiglet.figlet_format(str(user_name) + "'s Profile", justify= "center", font= "banner3"))
-print(Style.DIM + Fore.WHITE + Back.BLACK + pyfiglet.figlet_format("Name: " + str(user_Fname), font= "bigchief"))
+print(Style.DIM + Fore.WHITE + Back.BLACK + pyfiglet.figlet_format("Name: " + str(user_full_name), font= "bigchief"))
 print(Style.BRIGHT + Fore.CYAN + Back.BLACK +pyfiglet.figlet_format("Age: " + str(user_age), font= "bigchief"))
 print(Style.BRIGHT + Fore.MAGENTA + Back.BLACK +pyfiglet.figlet_format("Address: " + str(user_address), font= "bigchief"))
 
